@@ -27,7 +27,7 @@ namespace Dropbox
 
             ListarName(lista);
 
-            var tareaimagen = Task.Run(async () => await Download(cliente, "/Fotos movil/1567459473873__01.jpg")).GetAwaiter().GetResult();
+            var tareaimagen = Task.Run(async () => await Download(cliente, "//Foto Principal")).GetAwaiter().GetResult();
             var bytesimagen = Task.Run(async () => await tareaimagen.GetContentAsByteArrayAsync()).GetAwaiter().GetResult();
 
             imagenMuestra.Source = Transformacionbytestoimagen(bytesimagen);
@@ -37,7 +37,7 @@ namespace Dropbox
 
         static async Task<DropboxClient> Cliente()
         {
-            return new DropboxClient("sl.AsDddyxtYjmCetiPGn5zKT2vEeZ3uz2GG2RuLwEtUOApK9cQ_wLbm2KpXNrSacuqAd_ePR0zGQPa_SMpjDNRq2qABp-Rf6w2PTCoz8nufsIvuH8lS-9spQKs67Kt8Xme2Mnv_PC8c5U");
+            return new DropboxClient("// Clave");
         }
 
         // Lista las carpetas
