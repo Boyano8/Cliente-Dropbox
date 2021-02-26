@@ -1,0 +1,19 @@
+﻿<Window x:Class="Dropbox.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Dropbox"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"  />
+            <ColumnDefinition Width="3*" />
+        </Grid.ColumnDefinitions>
+        <ListView x:Name="listView" Height="420" VerticalAlignment="Top" Width="Auto" MouseDoubleClick="DobleClick" />
+        <Grid Grid.Column="1" >
+            <Image x:Name="imagenMuestra" HorizontalAlignment="Left" Height="395" Margin="2,10,0,0" Width="580" VerticalAlignment="Top"/>
+        </Grid>
+    </Grid>
+</Window>
