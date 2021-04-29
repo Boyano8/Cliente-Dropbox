@@ -37,7 +37,7 @@ namespace Dropbox
 
         static async Task<DropboxClient> Cliente()
         {
-            return new DropboxClient("sl.Av6nu4fsqaxP6zfix9bil8BuQG_qv2x47ovI3KWqbm6LJ3zCbtkSeKRk5GgkTv6iih0jKAGB8vOxNDaHQGIWSGeTFsJ3pyGwcQssdnQkdgCwgxzrN45qXzpTTKlxUplqTqTiTtk_zo8");
+            return new DropboxClient("");
         }
 
         // Lista las carpetas
