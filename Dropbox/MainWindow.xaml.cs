@@ -27,17 +27,17 @@ namespace Dropbox
 
             ListarName(lista);
 
-            var tareaimagen = Task.Run(async () => await Download(cliente, "//Foto Principal")).GetAwaiter().GetResult();
-            var bytesimagen = Task.Run(async () => await tareaimagen.GetContentAsByteArrayAsync()).GetAwaiter().GetResult();
+            //var tareaimagen = Task.Run(async () => await Download(cliente, "//Foto Principal")).GetAwaiter().GetResult();
+            //var bytesimagen = Task.Run(async () => await tareaimagen.GetContentAsByteArrayAsync()).GetAwaiter().GetResult();
 
-            imagenMuestra.Source = Transformacionbytestoimagen(bytesimagen);
+            // imagenMuestra.Source = Transformacionbytestoimagen(bytesimagen);
 
 
         }
 
         static async Task<DropboxClient> Cliente()
         {
-            return new DropboxClient("// Clave");
+            return new DropboxClient("sl.Av6nu4fsqaxP6zfix9bil8BuQG_qv2x47ovI3KWqbm6LJ3zCbtkSeKRk5GgkTv6iih0jKAGB8vOxNDaHQGIWSGeTFsJ3pyGwcQssdnQkdgCwgxzrN45qXzpTTKlxUplqTqTiTtk_zo8");
         }
 
         // Lista las carpetas
